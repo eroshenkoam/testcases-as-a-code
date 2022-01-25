@@ -9,7 +9,7 @@ import static io.qameta.allure.Allure.step;
 
 public class RandomDataTest {
 
-    private Faker faker = new Faker(Locale.ENGLISH);
+    private Faker faker = new Faker(new Locale("ru", "RU"));
 
     @Test
     public void testUserRegistration() {
