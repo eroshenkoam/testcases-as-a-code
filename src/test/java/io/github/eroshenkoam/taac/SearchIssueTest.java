@@ -17,7 +17,7 @@ public class SearchIssueTest {
 
     @Test
     @AllureId("91456")
-    @ProjectStories.CodeSearch
+    @ProjectStories.IssuesSearch
     @Tags({@Tag("web"), @Tag("smoke")})
     @DisplayName("Поиск Issue по номеру в репозитории")
     public void testIssueSearch() {
