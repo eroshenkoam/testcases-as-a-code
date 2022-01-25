@@ -11,6 +11,7 @@ import static io.qameta.allure.Allure.step;
 public class CodeSearchTest {
 
     @Test
+    @Manual
     @Feature("Search")
     @Story("Code search")
     @Owner("eroshenkoam")
