@@ -12,6 +12,7 @@ public class RandomDataTest {
     private Faker faker = new Faker(new Locale("ru", "RU"));
 
     @Test
+    @Manual
     public void testUserRegistration() {
         step("Открываем главную страницу");
         step("Нажимаем кнопку `Регистрация пользователя`");
