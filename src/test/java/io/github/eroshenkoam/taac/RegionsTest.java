@@ -11,6 +11,7 @@ import static java.lang.String.format;
 
 public class RegionsTest {
 
+    @Manual
     @CsvSource({
             "Москва,Московская область",
             "Санкт-Петербург,Ленинградская область",
