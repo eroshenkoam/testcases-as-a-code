@@ -25,6 +25,7 @@ dependencies {
     implementation("io.qameta.allure:allure-java-commons:2.17.2")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.8.2")
+    testImplementation("com.github.javafaker:javafaker:1.0.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 

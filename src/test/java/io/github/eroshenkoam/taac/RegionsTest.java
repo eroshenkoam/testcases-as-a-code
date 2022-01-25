@@ -18,7 +18,7 @@ public class RegionsTest {
     })
     @ProjectStories.RegionOrder
     @DisplayName("Тестируем регион")
-    @ParameterizedTest(name = "{displayName} {1}")
+    @ParameterizedTest(name = " {1}")
     public void testRegion(@Param("Город") String city,
                            @Param("Область") String region) {
         step("Открываем главную страницу");
