@@ -1,9 +1,7 @@
 package io.github.eroshenkoam.taac;
 
+import io.github.eroshenkoam.taac.feature.ProjectStories;
 import io.github.eroshenkoam.taac.step.WebSteps;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -15,9 +13,7 @@ public class CodeSearchTest {
 
     @Test
     @Manual
-    @Feature("Search")
-    @Story("Code search")
-    @Owner("eroshenkoam")
+    @ProjectStories.CodeSearch
     @DisplayName("Поиск вхождения кода в файл")
     public void testCodeSearch() {
         step("Открываем главную страницу");

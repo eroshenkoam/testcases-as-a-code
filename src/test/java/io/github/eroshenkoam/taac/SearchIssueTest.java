@@ -1,9 +1,8 @@
 package io.github.eroshenkoam.taac;
 
+import io.github.eroshenkoam.taac.feature.ProjectStories;
 import io.github.eroshenkoam.taac.step.WebSteps;
 import io.qameta.allure.AllureId;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -17,11 +16,8 @@ public class SearchIssueTest {
     private WebSteps steps = new WebSteps();
 
     @Test
-    @Manual
     @AllureId("91456")
-    @Owner("eroshenkoam")
-    @Feature("Issues")
-    @Story("Issue search")
+    @ProjectStories.CodeSearch
     @Tags({@Tag("web"), @Tag("smoke")})
     @DisplayName("Поиск Issue по номеру в репозитории")
     public void testIssueSearch() {
