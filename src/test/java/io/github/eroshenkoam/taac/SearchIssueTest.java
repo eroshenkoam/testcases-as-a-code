@@ -1,5 +1,6 @@
 package io.github.eroshenkoam.taac;
 
+import io.github.eroshenkoam.taac.step.WebSteps;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
@@ -13,6 +14,8 @@ import static io.qameta.allure.Allure.step;
 
 public class SearchIssueTest {
 
+    private WebSteps steps = new WebSteps();
+
     @Test
     @Manual
     @AllureId("91456")
@@ -23,13 +26,9 @@ public class SearchIssueTest {
     @DisplayName("Поиск Issue по номеру в репозитории")
     public void testIssueSearch() {
         step("Открываем главную страницу");
-        step("Ищем репозиторий eroshenkoam/allure-example", () -> {
-            step("Нажимаем на поле поиска в шапке");
-            step("Вводим текст eroshenkoam/allure-example");
-            step("Нажимаем Enter");
-        });
+        steps.searchText("eroshenkoam/allure-example");
         step("В поисковой выдаче выбираем репозиторий eroshenkoam/allure-example");
-        step("На странице репозитория переходи в Tab Issues");
+        steps.openRepositoryTab("Issues");
         step("Проверяем что Issue с номером #68 существует");
     }
 
