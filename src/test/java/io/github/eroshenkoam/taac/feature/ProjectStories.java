@@ -45,4 +45,16 @@ public @interface ProjectStories {
     @interface CodeSearch {
 
     }
+
+    @Documented
+    @Inherited
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.METHOD, ElementType.TYPE})
+    @Manual
+    @Feature("Region")
+    @Story("Order Region")
+    @Owner("eroshenkoam")
+    @interface RegionOrder {
+
+    }
 }
